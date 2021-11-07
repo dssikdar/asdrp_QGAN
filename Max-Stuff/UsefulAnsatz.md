@@ -19,7 +19,7 @@ from qiskit.providers.aer import QasmSimulator
 provider = IBMQ.load_account()
 ```
 
-**Hard-code value of** ```num_qubits = 4```
+**Hard-coded value of** ```num_qubits = 4```
 
 #### UsefulAnsatz Function
 ```python
@@ -42,6 +42,6 @@ def UsefulAnsatz(num_qubits, params): #defines function
 ```
 *Staggered ZZ Layer = ZZ gates on each qubit pair in* \[\[0,1\], \[2,3\] ... \[n-2,n-1\]\]
 *followed by ZZ gates on each qubit pair in* \[\[1,2\], \[3,4\] ... \[n-4,n-3\]\]
-*where n is the number of qubits*
+*where n is the number of qubits.*
    
    
