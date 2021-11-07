@@ -44,4 +44,7 @@ def UsefulAnsatz(num_qubits, params): #defines function
 *followed by ZZ gates on each qubit pair in* \[\[1,2\], \[3,4\] ... \[n-4,n-3\]\]
 *where n is the number of qubits.*
    
-   
+ > ```
+ > python ansatz = UsefulAnsatz(num_qubits, [np.pi/2] * 16)
+ > ansatz.draw('mpl')
+ > ```
