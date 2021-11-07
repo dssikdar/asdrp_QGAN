@@ -45,6 +45,31 @@ def UsefulAnsatz(num_qubits, params): #defines function
 *where n is the number of qubits.*
    
  > ```python
- > ansatz = UsefulAnsatz(num_qubits, [np.pi/2] * 16)
- > ansatz.draw('mpl')
+ > ansatz = UsefulAnsatz(num_qubits, [np.pi/2] * 16) #makes UsefulAnsatz for 4 qubits
+ > ansatz.draw('mpl') #draws picture of circuit
  > ```
+
+#### UsefulAnsatzPennylane Function
+```python
+import pennylane as qml
+dev = qml.device("default.qubit", wires=4, shots=1024)
+@qml.qnode(dev)
+def UsefulAnsatzPennylane(num_qubits, params):
+    index = 0
+    for i in range(num_qubits):
+        qml.RX(params[index], wires=i)
+    for i in range(num_qubits):
+        qml.RX(params[index], wires=i)
+    for i in range(0,num_qubits,2):
+        qml.MultiRZ(params[index], wires=[i,i+1])
+    for i in range(1,num_qubits-1,2):
+        qml.MultiRZ(params[index], wires=[i,i+1])
+    return [qml.expval(qml.PauliZ(i)) for i in range(num_qubits)]
+```
+*Does same thing as normal function*
+*Here in case we need to switch to Pennylane*
+
+> ```python
+> UsefulAnsatzPennylane(num_qubits, [np.pi/2] * 16)
+> ```
+
