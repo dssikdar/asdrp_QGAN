@@ -26,3 +26,8 @@ This produces the output:
 [(0.7071067811865476, array([ 0., -1.]), array([-1., -0.])),
 (0.7071067811865476, array([-1.,  0.]), array([-0., -1.]))]
 ```
+For each tuple in the returned list, the first element is the Schmidt coefficients,
+the second the component for first subsystem, and the third the component for the second subsystem.
+
+#### Visit the GitHub repository [here](https://github.com/stephenhky/pyqentangle)
+> @PNGNS-Marekos1111
