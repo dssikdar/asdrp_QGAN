@@ -3,16 +3,18 @@
 
 ### Step One
 First, run
-> `pip install wget`
-> `pip install torch`
-> `pip install pandas`
-> `pip install numpy`
+> `pip install wget`  
+> `pip install torch`  
+> `pip install pandas`  
+> `pip install numpy`  
 
 to install all the modules.
 
 ### Step Two
 Next go find and replace all `torch.cuda.FloatTensor` to `torch.FloatTensor` if you don't have an NVIDIA GPU.
 This will solve the Torch CUDA error, but will make training a bit slower.  
+
+### Step Three
 Change
 ```python
 cuda = True if torch.cuda.is_available() else False
@@ -27,7 +29,7 @@ cuda = False
 self.Tensor = torch.FloatTensor
 ```
 
-### Step 3
+### Step Four
 To prevent the **FileNotFound** error, change the folder name below to anything you want.
 ```python
 trainer = TrainModelRunner('X_JTVAE_250k_rndm_zinc.csv', output_model_folder='your_folder_name', starting_epoch=200, save_interval=100, message='Starting training', batch_size=2500)
