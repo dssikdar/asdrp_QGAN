@@ -13,7 +13,8 @@ to install all the modules.
 ### Step Two
 Next go find and replace all `torch.cuda.FloatTensor` to `torch.FloatTensor` if you don't have an NVIDIA GPU.
 This will solve the Torch CUDA error, but will make training a bit slower.  
-Change ```python
+Change
+```python
 cuda = True if torch.cuda.is_available() else False
   if cuda:
     self.G.cuda()
