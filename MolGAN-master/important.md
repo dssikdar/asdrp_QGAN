@@ -21,7 +21,8 @@ cuda = True if torch.cuda.is_available() else False
     self.D.cuda()
 self.Tensor = torch.cuda.FloatTensor if cuda else torch.FloatTensor
 ```
-to ```python
+to
+```python
 cuda = False
 self.Tensor = torch.FloatTensor
 ```
