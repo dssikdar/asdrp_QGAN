@@ -4,8 +4,10 @@
 
 Welcome to the ASDRP Quantum Generative Adversarial Network (QGAN) repository. 
 
-Abstract: Current drug discovery pipelines take between five to ten years and cost billions of dollars. People have been researching and implementing computational approaches to search for molecules and compounds from the chemical space, which can be on the order of 1060. One solution is deep generative models, which can learn from the nonlinearity in data by modeling the probability distribution of chemical structures and drugs. These generative models can extract salient features which characterize the molecules. One of the most well-known unsupervised learning algorithms –– Generative Adversarial Networks (GANs) –– can discover drug candidates as they generate molecular structures abiding by the laws of physics and chemistry. However, GANs often suffer from problems, including vanishing gradient and increasing complexity, due to the exponential increase in volume of data. 
-We need a generative model that can better learn the representation of molecules more efficiently than classical ML models by searching the exponentially large chemical space. Quantum computing is better than classical computing at processing high dimensional data because qubits can represent exponentially more states than bits at the same time. While n number of bits can represent 2n possible states, n qubits can represent 2n states. For example, 64 bits can represent 128 states, while 64 qubits can represent 264 (~18 billion) states. Because of the immense power of qubits, which is necessary for searching the chemical space, we propose a QGAN with a hybrid architecture: a quantum generator and a classical discriminator. The quantum generator would use a series of variational quantum circuits to automatically learn features and efficiently train the QML model. The discriminator will likely be a classical neural network, which would classify between the fake and real molecular structures. 
+Abstract: 
+    Current drug discovery pipelines take between five to ten years and cost billions of dollars. As a result, scientists are researching computational approaches to search for molecules from the chemical space. One solution is deep generative models, which learn from the nonlinear data by modeling the probability distribution of chemical structures. These generative models can extract salient features which characterize the molecules. One of the most well-known unsupervised learning algorithms––Generative Adversarial Networks (GANs)––can discover valid drug candidates that abide by the laws of physics and chemistry. However, GANs often suffer from problems, including vanishing gradient and increasing complexity, due to the exponential increase in the volume of data. 
+    We need a generative model that can better learn the representation of molecules more efficiently than classical ML models by searching the exponentially large chemical space. Quantum computing is better than classical computing at processing high dimensional data because qubits can represent exponentially more states than bits at the same time. Because of the immense power of qubits and parallelization possible, which is necessary for searching the chemical space, we propose a Quantum Generative Adversarial Network with a hybrid architecture: a quantum generator and a classical discriminator. The quantum generator, a variational quantum circuit, would automatically learn features and generate valid molecules. The discriminator is a classical neural network, which classifies the fake and real molecular structures. The QGAN would learn from more than 100,000 molecules represented by adjacency lists.
+
 
 Keywords:
 Quantum Machine Learning, Generative Adversarial Learning, Variational Quantum Circuits (VQC), Discriminator, Generator
@@ -14,7 +16,9 @@ Created by: Diptanshu Sikdar
 
 Current Advisor: Dr. Larry McMahan
 
-Current researchers: Diptanshu Sikdar, Max Cui, Adelina Chau, Arjun Bhamra, Joey Huang, Kanthi Makineedi, 
+Current researchers: Diptanshu Sikdar, Max Cui, Adelina Chau, Arjun Bhamra, Kanthi Makineedi, Sathvik Prasanna
+
+Previous researchers: Joey Huang
 
 Navigation Guide:
 1. Main 
