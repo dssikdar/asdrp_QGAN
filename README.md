@@ -19,8 +19,8 @@ Quantum Machine Learning, Generative Adversarial Learning, Variational Quantum C
 
 
 Current researchers: Diptanshu Sikdar, Max Cui, Adelina Chau, Arjun Bhamra, Kanthi Makineedi, Sathvik Prasanna
-
 Previous researchers: Joey Huang
+
 =======
 
 Navigation Guide:
