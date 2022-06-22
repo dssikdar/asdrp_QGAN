@@ -18,7 +18,7 @@ Quantum Machine Learning, Generative Adversarial Learning, Variational Quantum C
 **Current Advisor:** Dr. Larry McMahan
 
 
-Current researchers: Diptanshu Sikdar, Max Cui, Adelina Chau, Arjun Bhamra, Kanthi Makineedi, Sathvik Prasanna
+Current researchers: Diptanshu Sikdar, Max Cui, Adelina Chau, Arjun Bhamra, Sathvik Prasanna
 Previous researchers: Joey Huang
 
 =======
